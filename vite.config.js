@@ -20,9 +20,5 @@ export default defineConfig({
     sourcemap: false,       // 🔒 Disable source maps
     minify: 'esbuild',      // ⚡ Minify code with esbuild
   },
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    strictPort: true
-  }
+ 
 });
