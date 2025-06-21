@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/api/contact', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,15 +45,17 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setStatus('Message sent successfully!');
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus('✅ Message sent successfully!');
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        setStatus('Failed to send message. Try again.');
+        setStatus(`❌ Failed to send message: ${result.message || 'Try again.'}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      setStatus('An error occurred. Please try again.');
+      setStatus('❌ An error occurred. Please try again.');
     }
   };
 
