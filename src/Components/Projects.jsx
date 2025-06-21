@@ -80,6 +80,7 @@ const projects = [
     founder: "A.M Fresh (U.K)",
     implementing: "IRFT and SRDT",
     period: "2 months (2022)",
+    location: "Nashik",
     description: "A survey was conducted in Nashik, Sangli, Satara and Osmanabad Districts of Maharashtra to have a first-hand account of development expectations from the grape growers, farm workers and packhouse workers.",
     images: [photo1, photo2, photo3, photo4],
   },
@@ -88,6 +89,7 @@ const projects = [
     founder: "Syngenta Bioscience Pvt. Ltd.",
     implementing: "IRFT and SRDT",
     period: "1 month (2022)",
+    location: "Goa",
     description: "A survey was conducted in Goa to have first-hand account of the community development expectations from the community workers, SHGs, and Gram Panchayat.",
     images: [photo11, photo12, photo13, photo14],
   },
@@ -96,6 +98,7 @@ const projects = [
     founder: "Syngenta",
     implementing: "SRDT",
     period: "5 months (2022-23)",
+    location: "Khargone District",
     description: "We trained 5000 farmers and 500 spray-men from Maheshwar and Bhagwanpura blocks of Khargone District, MP on farmers' health and safety while using and handling chemicals, followed by usage of Syngenta PPE kit and demonstrations. A 50-day van campaign was organized to reach maximum farmers and villagers with safety messages.",
     images: [farmer1, farmer2, farmer3, farmer4, farmer5, farmer6, farmer7, farmer8, farmer9],
   },
@@ -104,8 +107,8 @@ const projects = [
     founder: "Patagonia",
     implementing: "IRFT and SRDT",
     period: "1 month (2023)",
-    description: `Location: Sambhajinagar
-
+    Location: "Sambhajinagar",
+    description: `
 Mapping Objectives:
 1. Chain of custody tracking and traceability for cotton-in-conversion.
 2. Mapping farmer contracting, premium payments, training, and labor monitoring.
@@ -119,8 +122,8 @@ Mapping Objectives:
     founder: "Syngenta",
     implementing: "SRDT & IRFT",
     period: "1 month (2023)",
-    description: `Location: Maharashtra, Gujarat and Karnataka
-
+    Location: "Maharashtra, Gujarat and Karnataka",
+    description: `
 Grower training on regenerative agriculture practices (1000 growers trained).
 
 Key Principles:
@@ -136,8 +139,8 @@ Key Principles:
     founder: "East West India Seeds Pvt. Ltd",
     implementing: "SRDT",
     period: "21st Dec 2023",
-    description: `Location: Devulgaon Raja, Maharashtra
-
+    Location: "Devulgaon Raja, Maharashtra",
+    description: `
 Health camp, PPE kit distribution, and safety awareness session for 400 farmers.`,
     images: [photo41, photo42, photo43, photo44, photo45, photo46, photo47],
   },
@@ -146,8 +149,8 @@ Health camp, PPE kit distribution, and safety awareness session for 400 farmers.
     founder: "Syngenta",
     implementing: "SRDT",
     period: "1 year (2023-24)",
-    description: `Location: Devulgaon Raja, Lonar, Washim, Nanded (Maharashtra)
-
+    Location: "Devulgaon Raja, Lonar, Washim, Nanded (Maharashtra)",
+    description: `
 Soil Health: Soil testing of 400 growers, analysis of test reports by soil experts, and awareness sessions for growers based on recommendations.`,
     images: [photo51, photo52, photo53, photo54, photo55, photo56, photo57],
   },
@@ -156,8 +159,8 @@ Soil Health: Soil testing of 400 growers, analysis of test reports by soil exper
     founder: "East West India Seeds Pvt. Ltd",
     implementing: "SRDT",
     period: "11th Dec 2024",
-    description: `Location: Devulgaon Raja, Maharashtra
-
+    Location: "Devulgaon Raja, Maharashtra",
+    description: `
 Health camp, PPE kit distribution, and safety awareness programme for 700 farmers held on 11th December 2024.`,
     images: [photo61, photo62, photo63, photo64, photo65, photo67, photo68, photo69],
   },
@@ -166,20 +169,21 @@ Health camp, PPE kit distribution, and safety awareness programme for 700 farmer
     founder: "East West Seeds India Pvt. Ltd",
     implementing: "SRDT",
     period: "6 Months (2024-25)",
+    Location: "Devulgaon Raja, Lonar, Maharashtra",
     description:
-      "Location: Devulgaon Raja, Lonar, Maharashtra Collection of 30MT of Mulch Waste from the Project Location and Recycling of the collected Mulch Waste through processing unit.",
+      " Collection of 30MT of Mulch Waste from the Project Location and Recycling of the collected Mulch Waste through processing unit.",
     images: [mulchImg1, mulchImg2, mulchImg3, mulchImg4]
   }
 ];
 
 const ongoingProjects = [
   {
-    title: "S A V E 4.0 (on Soil Health and Mulch Collection and Recycling)",
+    title: "S A V E 4.0 (on Soil Health and Mulch Collection and Recycling and Vermicomposting)",
     founder: "Syngenta",
     implementing: "SRDT",
     period: "1 year (2024–25)",
-    description: `Location: Devulgaon Raja, Lonar, Washim, Nanded (Maharashtra), Rajasthan and Punjab
-
+    Location: "Devulgaon Raja, Lonar, Washim, Nanded (Maharashtra), Rajasthan and Punjab",
+    description: `
 Soil Health:
 • Soil Testing of 350 growers.
 • Analysis of test reports by soil experts.
@@ -198,11 +202,12 @@ Vermicomposting Units (Agri-enterprising model):
     title: "Mulch Collection and Recycling",
     founder: "East West Seeds India Pvt. Ltd",
     implementing: "SRDT",
-    period: "6 months",
+    period: "1 year",
+    Location: "Devulgaon Raja, Lonar, Maharashtra",
     description: `Location: Devulgaon Raja, Lonar, Maharashtra
 
 Mulch Waste Collection and Recycling:
-• Collection of 30MT of mulch waste from project location.
+• Collection of 60 MT of mulch waste from project location.
 • Recycling of collected mulch waste through processing unit.`,
     images: [],
   },
@@ -298,6 +303,7 @@ const Projects = () => {
                 <p><strong>Funder Name:</strong> {project.founder}</p>
                 <p><strong>Implementing Agencies:</strong> {project.implementing}</p>
                 <p><strong>Period:</strong> {project.period}</p>
+                <p><strong>Location:</strong>{project.location}</p>
                 <p className="project-description">{project.description}</p>
               </div>
             </div>
