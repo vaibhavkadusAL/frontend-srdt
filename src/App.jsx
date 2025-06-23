@@ -15,25 +15,25 @@ import Gallary from './Components/Gallary';
 import Projects from './Components/Projects';
 
 function App() {
-  useEffect(() => {
-    // Disable right-click
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   // Disable right-click
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    // Disable dev tools key combinations
-    const handleKeyDown = (e) => {
-      if (
-        e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase())) ||
-        (e.ctrlKey && e.key.toLowerCase() === 'u')
-      ) {
-        e.preventDefault();
-      }
-    };
+  //   // Disable dev tools key combinations
+  //   const handleKeyDown = (e) => {
+  //     if (
+  //       e.key === 'F12' ||
+  //       (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase())) ||
+  //       (e.ctrlKey && e.key.toLowerCase() === 'u')
+  //     ) {
+  //       e.preventDefault();
+  //     }
+  //   };
 
-    document.addEventListener("contextmenu", handleContextMenu);
-    document.addEventListener("keydown", handleKeyDown);
+  //   document.addEventListener("contextmenu", handleContextMenu);
+  //   document.addEventListener("keydown", handleKeyDown);
 
     return () => {
       document.removeEventListener("contextmenu", handleContextMenu);
