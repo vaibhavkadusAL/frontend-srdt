@@ -32,10 +32,10 @@ const Navbar = () => {
       <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/" onClick={closeMenu}>Home</Link></li>
         <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-        <li><Link to="/donate" onClick={closeMenu}>Donate</Link></li>
         <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
         <li><Link to="/gallary" onClick={closeMenu}>Gallery</Link></li>
         <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
+        <li><Link to="/donate" onClick={closeMenu}>Donate</Link></li>
         <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
       </ul>
     </nav>
