@@ -51,7 +51,7 @@ const Contact = () => {
         setStatus('✅ Message sent successfully!');
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        setStatus(`❌ Failed to send message: ${result.message || 'Try again.'}`);
+        setStatus(`❌ Failed to send message: Server Error,Try Again Later`);
       }
     } catch (error) {
       console.error('Error:', error);
