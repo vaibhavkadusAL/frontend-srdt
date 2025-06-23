@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Projects.css";
-import projectBG from "../assets/Background images/image1.png";
+import projectBG from "../assets/Background images/image4.jpg";
+
 // Project 1
 import photo1 from "../assets/Project 1/photo1.JPG";
 import photo2 from "../assets/Project 1/photo2.JPG";
@@ -68,10 +69,10 @@ import photo68 from "../assets/Project 8/photo68.jpg";
 import photo69 from "../assets/Project 8/photo69.jpg";
 
 // Project 9
-import mulchImg1 from '../assets/Project 9/photo71.jpg';
-import mulchImg2 from '../assets/Project 9/photo72.jpg';
-import mulchImg3 from '../assets/Project 9/photo73.jpg';
-import mulchImg4 from '../assets/Project 9/photo74.jpg';
+import mulchImg1 from "../assets/Project 9/photo71.jpg";
+import mulchImg2 from "../assets/Project 9/photo72.jpg";
+import mulchImg3 from "../assets/Project 9/photo73.jpg";
+import mulchImg4 from "../assets/Project 9/photo74.jpg";
 
 
 const projects = [
@@ -238,7 +239,6 @@ const Projects = () => {
         minHeight: "100vh",
       }}
     >
-      {/* Optional Overlay */}
       <div
         style={{
           position: "absolute",
@@ -246,12 +246,11 @@ const Projects = () => {
           bottom: 0,
           left: 0,
           right: 0,
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
+         
           zIndex: 1,
         }}
       ></div>
 
-      {/* Content */}
       <div style={{ position: "relative", zIndex: 2 }}>
         <h2 className="heading">Completed Projects</h2>
         <div className="project-grid">
@@ -260,11 +259,7 @@ const Projects = () => {
               <Slider {...settings}>
                 {project.images.map((img, i) => (
                   <div key={i}>
-                    <img
-                      src={img}
-                      alt={`Slide ${i + 1}`}
-                      className="project-image"
-                    />
+                    <img src={img} alt={`Slide ${i + 1}`} className="project-image" />
                   </div>
                 ))}
               </Slider>
@@ -273,13 +268,13 @@ const Projects = () => {
                 <p><strong>Funder Name:</strong> {project.founder}</p>
                 <p><strong>Implementing Agencies:</strong> {project.implementing}</p>
                 <p><strong>Period of Intervention:</strong> {project.period}</p>
-                <p><strong>Location: </strong> {project.location}</p>
+                <p><strong>Location:</strong> {project.location}</p>
                 <p className="project-description">{project.description}</p>
               </div>
             </div>
           ))}
         </div>
-        {/* Ongoing Projects */}
+
         <h2 className="heading" style={{ marginTop: "60px" }}>Ongoing Projects</h2>
         <div className="project-grid">
           {ongoingProjects.map((project, index) => (
@@ -287,11 +282,7 @@ const Projects = () => {
               <Slider {...settings}>
                 {project.images.map((img, i) => (
                   <div key={i}>
-                    <img
-                      src={img}
-                      alt={`Ongoing Slide ${i + 1}`}
-                      className="project-image"
-                    />
+                    <img src={img} alt={`Ongoing Slide ${i + 1}`} className="project-image" />
                   </div>
                 ))}
               </Slider>
@@ -300,7 +291,7 @@ const Projects = () => {
                 <p><strong>Funder Name:</strong> {project.founder}</p>
                 <p><strong>Implementing Agencies:</strong> {project.implementing}</p>
                 <p><strong>Period:</strong> {project.period}</p>
-                <p><strong>Location: </strong>{project.location}</p>
+                <p><strong>Location:</strong> {project.location}</p>
                 <p className="project-description">{project.description}</p>
               </div>
             </div>

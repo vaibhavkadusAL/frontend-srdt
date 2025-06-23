@@ -1,6 +1,25 @@
 .home-container {
   width: 100%;
   font-family: "Segoe UI", sans-serif;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* ✅ Blurred Background Image */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/Background images/image4.jpg'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px); /* Adjust blur */
+  z-index: -1;
 }
 
 /* Slideshow */
@@ -27,8 +46,11 @@
 /* Interest Section */
 .interest-section {
   padding: 40px 20px;
-  background-color: #f4f7f9;
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  margin: 20px;
 }
 
 .interest-section h2 {

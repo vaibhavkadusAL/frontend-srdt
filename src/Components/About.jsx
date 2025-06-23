@@ -67,7 +67,7 @@ const About = () => {
       </div>
 
       <motion.div className="about-values" variants={fadeUp}>
-        <h2>Our Core Values</h2>
+        <h2 className="our">Our Core Values</h2>
         <div className="value-tags">
           {[
             "Responsibility",

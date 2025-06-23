@@ -71,7 +71,7 @@ const Gallary = () => {
     <div className="gallery-container">
       <h2 className="gallery-title">Gallery</h2>
       <div className="gallery-grid">
-        {images.slice(0, 44).map((img, index) => (
+        {images.map((img, index) => (
           <div
             key={index}
             className="gallery-item"

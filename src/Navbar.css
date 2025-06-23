@@ -99,7 +99,7 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #fdfcfc;
+    background: transparent;
     margin-top: 7px;
     padding: 10px 0;
   }
