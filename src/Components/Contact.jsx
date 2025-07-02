@@ -105,7 +105,8 @@ const Contact = () => {
         <h3>Contact Information</h3>
         <p><strong>Address:</strong> Registered office: At: Masnerwadi, Tq: Gangakhed, Dist: Parbhani - 431514.</p>
         <p><strong>Phone:</strong>+91 9920241110</p>
-        <p><strong>Email:</strong> sairuraldevelopmenttrust@gmail.com</p>
+        <p><strong>Email:</strong> <a href="mailto:info.sairuraldevelopmenttrust@gmail.com">info.sairuraldevelopmenttrust@gmail.com</a></p>
+
 
         <h4>Find Us Here:</h4>
         <div className="map-container">
